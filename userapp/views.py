@@ -4,7 +4,6 @@ from .models import UserProfile
 
 # Create your views here.
 
-
 def homepage(request):
     userInfo = UserProfile.objects.all()
     userData = {'userInfo': userInfo}
