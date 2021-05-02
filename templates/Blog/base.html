@@ -15,7 +15,7 @@
     />
     <!-- <link rel="stylesheet" href="{% static '/css/style.css' %}" /> -->
     {% block css %} {% endblock %}
-    <title>Hello, world!</title>
+    <title>{% block title %} {% endblock %}</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">

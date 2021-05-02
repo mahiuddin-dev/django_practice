@@ -1,4 +1,5 @@
-{% extends "Blog/base.html" %} {% block body %}
+{% extends "Blog/base.html" %} {% block title %} Blog Page {% endblock %} 
+{% block body %}
 
 <div class="container">
   <div class="bg-light p-5 rounded"></div>
@@ -15,18 +16,16 @@
           aria-label="Placeholder: Thumbnail"
           preserveAspectRatio="xMidYMid slice"
           focusable="false"
-       >
+        />
 
         <div class="card-body">
-          <p class="card-text">
-            {{i.MainDes|slice:"0:120"}}....
-          </p>
+          <p class="card-text">{{i.MainDes|slice:"0:120"}}....</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
               <a href="blogpost/{{i.PosttId}}">
-              <button type="button" class="btn btn-sm btn-outline-secondary">
-                View
-              </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  View
+                </button>
               </a>
             </div>
             <small class="text-muted"> {{i.PostDate}} </small>

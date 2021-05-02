@@ -1,4 +1,5 @@
-{% extends "Blog/base.html" %} {% block css %}
+{% extends "Blog/base.html" %} {% block title %} {{vPost.MainHeading}} 
+{%endblock %} {% block css %}
 <style>
   .postimg {
     width: 100%;
@@ -52,8 +53,7 @@
     </div>
   </div>
 
-  <input id="postid" type="hidden" value="{{vPost.PosttId}}">
-
+  <input id="postid" type="hidden" value="{{vPost.PosttId}}" />
 </div>
 
 {% endblock %}
